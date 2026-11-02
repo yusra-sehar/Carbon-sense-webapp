@@ -1,17 +1,15 @@
-# Carbon-sense-webapp
-CarbonSense: a carbon footprint calculator that estimates a user’s emissions from travel, electricity and food, and suggests how to reduce them, built around core DAA algorithms.
+# Carbon Emission Tracking App (CarbonSense)
 
- CarbonSense
-
-CarbonSense is a carbon footprint tracking app. A user enters daily activities
-(travel, electricity use and food type), and the app calculates their carbon
-score, classifies the level as Low, Medium or High, and suggests how to reduce
-emissions. The project applies core Design and Analysis of Algorithms (DAA)
-concepts to a real-world problem.
+This project is a responsive Django web application that calculates a user's
+carbon footprint from daily activities (travel, electricity use and food type),
+classifies the result as Low, Medium or High, and suggests how to reduce
+emissions. The back end is built with Django and the front end with Bootstrap,
+so it works on both desktop and mobile screens. The calculation and reporting
+features apply core Design and Analysis of Algorithms (DAA) concepts.
 
 ## Problem Statement
 Carbon emissions are rising, and most people have no simple way to see how
-their daily habits contribute. CarbonSense makes this visible and promotes
+their daily habits contribute. This app makes that impact visible and promotes
 eco-friendly habits.
 
 ## Objectives
@@ -29,6 +27,9 @@ eco-friendly habits.
 
 Example: Travel = 10 km, Electricity = 5 units, Food = non-veg
 `carbon = (10 x 0.21) + (5 x 0.85) + foodFactor`
+
+Note: the flow above follows the original design document; the web
+implementation may differ slightly in screen layout.
 
 ## Algorithms Used
 
@@ -56,7 +57,7 @@ Arrays, lists and structures (records) for activities, factors and daily totals.
 User Input -> Algorithm -> Result -> Suggestions
 
 ## Tech Stack
-Python, Django, HTML5, CSS3, Bootstrap, SQLite
+Python, Django (back end), HTML5, CSS3, Bootstrap (responsive front end), SQLite
 
 ## How to Run
 1. Clone the repository
@@ -65,7 +66,7 @@ Python, Django, HTML5, CSS3, Bootstrap, SQLite
 4. Start the server: python manage.py runserver
 
 ## Conclusion
-CarbonSense calculates and analyzes personal carbon footprints using efficient
-algorithms and structured data handling. It combines real-world features such
-as free and premium access with environmental awareness, and shows practical
-applications of DAA concepts.
+This project calculates and analyzes personal carbon footprints using
+efficient algorithms and structured data handling. It combines real-world
+features such as free and premium access with environmental awareness, and
+shows practical applications of DAA concepts.
